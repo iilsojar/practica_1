@@ -39,12 +39,12 @@
 //             }
 
 //задача 8: показать четные числа от 1 до N
+
 Console.Clear();
 Console.Write("введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-int num1 = 1;
-while (num1 <= num)
-{
-    num1++;
-    Console.Write($"{num1} ");
-}
+int a = Convert.ToInt32(Console.ReadLine());
+for(int b = 1; b <= a, b++)
+    if(b % 2 == 0) 
+        {
+            Console.Write($"{b}");
+        }
