@@ -9,6 +9,6 @@ int number = new Random(). Next(100, 1000);
 Console.WriteLine($"случайное число = {number}");
 int firstnumber = number / 100;
 int thirdnumber = number % 10;
-int result = firstnumber * 10 + thirdnumber;
+int num = firstnumber * 10 + thirdnumber;
+Console.WriteLine(num);
 
-Console.WriteLine(result);
