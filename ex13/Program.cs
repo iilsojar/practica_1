@@ -20,11 +20,11 @@ Console.Clear();
 int number = new Random(). Next(100, 1000);
 Console.WriteLine($"случайное число = {number}");
 
-int NewNumber (int num) //название метода
+int DeletSecondDigit (int num) //название метода
 {        //тело метода
     int firstnumber = num / 100;
     int thirdnumber = num % 10;
     return firstnumber * 10 + thirdnumber;
 }
-int newnumber = NewNumber(number);
+int newnumber = DeletSecondDigit(number);
 Console.WriteLine($"{newnumber}");
