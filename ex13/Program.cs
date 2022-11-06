@@ -4,11 +4,27 @@
 //782->72;
 //918->98
 
+// ПЕРВЫЙ СПОСОБ 
+// Console.Clear();
+// int number = new Random(). Next(100, 1000);
+// Console.WriteLine($"случайное число = {number}");
+// int firstnumber = number / 100;
+// int thirdnumber = number % 10;
+// int newnumber = firstnumber * 10 + thirdnumber;
+// Console.WriteLine(newnumber);
+
+
+//МЕТОД
+
 Console.Clear();
 int number = new Random(). Next(100, 1000);
 Console.WriteLine($"случайное число = {number}");
-int firstnumber = number / 100;
-int thirdnumber = number % 10;
-int num = firstnumber * 10 + thirdnumber;
-Console.WriteLine(num);
 
+int NewNumber (int num) //название метода
+{        //тело метода
+    int firstnumber = num / 100;
+    int thirdnumber = num % 10;
+    return firstnumber * 10 + thirdnumber;
+}
+int newnumber = NewNumber(number);
+Console.WriteLine($"{newnumber}");
