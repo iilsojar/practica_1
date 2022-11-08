@@ -5,9 +5,13 @@ Console.Write("введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int a = 1;
 
+string InSqare (int num)
+{
+    return $"{num}     {num * num}";
+}
 while(a <= number)
 {
-    Console.WriteLine($"{a} ");
+    Console.WriteLine(InSqare(a));
     a++;
 }
 
